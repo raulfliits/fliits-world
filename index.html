@@ -3656,7 +3656,7 @@ function openMotoPanel(i){
       ["Rider por su ID","Escribes el ID y trae el nombre de fliiters admin.","Copiar y pegar nombres"],
       ["Permisos","Solo Gerard, Azlan, Ivan y Raül modifican; el resto de @fliits.com, solo lectura.","Cualquiera con acceso editaba"]]
      .map((f,i)=>`<div class="vf">${K(`me.f${i}.t`,f[0],"b")}${K(`me.f${i}.d`,f[1],"span")}</div><div class="vno">✗ ${K(`me.f${i}.c`,f[2],"span")}</div><div class="vok">✓</div>`).join("")}</div>
-   <div class="src">${K("me.src","opsfliits.github.io/motos-empresa · acceso con cuenta @fliits.com","span")}</div>
+   <div class="src">${K("me.src","raulfliits.github.io/motos-empresa · acceso con cuenta @fliits.com","span")}</div>
    ${notes("mo3.notes",`~2 min. Gerard valida la documentación (NIE, carnets, permisos). Luego las motos: 163 hoy en Catalunya, por ciudad y, en Barcelona y Sabadell, por Glovo y Uber Eats. Para cumplir el % que piden harían falta ${NE} motos: faltan ${FA}. Las motos de empresa (solo en Barcelona) salen ya de la app Motos de empresa: 22 en uso y 3 en taller, con 29 riders en lista de espera. Con las 3 del taller faltan ${FA-3} (flota de ${22+FA} en uso). Hay 10 más en camino, pero no las contamos hasta recibirlas. Termina con la app: un solo sitio para Escalaciones, Zoomo y Vehículos, detecta errores y conecta la lista de espera.`)}`;
   openPanel(`MUNDO ${i+1} · ${nm(scr.who)}`,"¡PANTALLA SUPERADA!",html,"ENTER · GUARDAR MONEDA DE ORO",()=>finishScreen(i),b=>{ updMotos(b,true); b.querySelectorAll("#meVs .vok").forEach((v,k)=>setTimeout(()=>{ if(open>0){ v.classList.add("on"); sfx.coin(); } },2600+k*400)); });
 }
