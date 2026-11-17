@@ -8,3 +8,4 @@ Juego y presentación de FLiiTS Catalunya. Se publica con GitHub Pages en https:
 - `juego/`: solo el juego, sin los paneles de datos. Es a donde lleva el QR.
 
 Ambas se generan con `sh build.sh ruta/a/FLiiTS_Catalunya_World.html`.
+- `juego/portatil/`: solo el juego para consolas portátiles con Android y botones físicos (sin la consola dibujada).
