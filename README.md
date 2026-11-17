@@ -9,4 +9,5 @@ Juego y presentación de FLiiTS Catalunya. Se publica con GitHub Pages en https:
 
 Ambas se generan con `sh build.sh ruta/a/FLiiTS_Catalunya_World.html`.
 - `consola/`: solo el juego para consolas portátiles con Android y botones físicos (sin la consola dibujada).
+- `rom/fliits-world.gba`: versión Game Boy Advance completa (plataforma, RPG, arcade y repartidor) para consolas sin navegador como la Anbernic RG35XX con GarlicOS. Copiar a `Roms/GBA`.
 - `rom/fliits-world.gb`: ROM de Game Boy para consolas sin navegador (Anbernic con Linux, etc.). Copiar a la carpeta de ROMs de Game Boy (GB).
