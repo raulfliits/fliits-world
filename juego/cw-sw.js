@@ -1,6 +1,6 @@
 // Service worker de FLiiTS Catalunya World: guarda el juego para abrirlo sin conexión.
 // Controla toda la web (scope ./).
-const CACHE = "cwj-v1";
+const CACHE = "cwj-v2";
 const FILES = ["./", "index.html", "catalunya-world.webmanifest", "cw-icon-192.png", "cw-icon-512.png", "cw-apple-touch-icon.png"];
 self.addEventListener("install", e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith("cwj-") && k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
